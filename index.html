@@ -18,6 +18,7 @@
 	<div class="positioning-wrapper">
 		<main>
 			<section class="hero-image-section">
+				<h1 class="do-not-display"></h1>
 				<img class="hero-image" src="images/drawers.jpg" alt="a picture of a drawer">
 			</section>
 			<section class="article-section">
@@ -39,7 +40,7 @@
 							<span>28 Jun 2020</span>
 						</h2>
 					</div>
-					<button id="share-bttn" class="share-bttn" type="button"  onfocusin="showSharePanel()" onblur="hideSharePanel()">
+					<button id="share-bttn" class="share-bttn" type="button"  onclick="toggleSharePanel()">
 						<img id="share-icon" src="images/icon-share.svg" alt="share icon">
 					</button>
 				</div>
@@ -47,25 +48,25 @@
 			<div id="mobile-share-panel" class="share-panel mobile-share-panel">
 				<div class="share-icons-wrapper">
 					<h2 class="share-text">share</h2>
-					<img src="images/icon-facebook.svg" alt="facebook">
-					<img src="images/icon-twitter.svg" alt="twitter">
-					<img src="images/icon-pinterest.svg" alt="pinterest">
+					<img class="app-icon" src="images/icon-facebook.svg" alt="facebook">
+					<img class="app-icon" src="images/icon-twitter.svg" alt="twitter">
+					<img class="app-icon" src="images/icon-pinterest.svg" alt="pinterest">
 				</div>
 				<div class="mobile-share-bttn-wrapper">
-					<button class="share-bttn active-share-bttn" type="button">
+					<button class="share-bttn active-share-bttn" type="button" onclick="toggleSharePanel()">
 						<img class="active-share-icon" src="images/icon-share.svg" alt="share icon">
 					</button>
 				</div>
 			</div>	
 		</main>
-		<section id="desktop-share-panel" class="share-panel desktop-share-panel">
+		<aside id="desktop-share-panel" class="share-panel desktop-share-panel">
 			<div class="share-icons-wrapper">
 				<h2 class="share-text">share</h2>
-				<img src="images/icon-facebook.svg" alt="facebook">
-				<img src="images/icon-twitter.svg" alt="twitter">
-				<img src="images/icon-pinterest.svg" alt="pinterest">
+				<img class="app-icon" src="images/icon-facebook.svg" alt="facebook">
+				<img class="app-icon" src="images/icon-twitter.svg" alt="twitter">
+				<img class="app-icon" src="images/icon-pinterest.svg" alt="pinterest">
 			</div>
-		</section>	
+		</aside>	
 	</div>
 	<footer class="attribution">
 		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
